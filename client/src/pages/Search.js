@@ -7,7 +7,7 @@ import Container from '../components/Container ';
 function Search() {
 
   const [bookSearch, setBookSearch] = useState('');
-  const [searchResults, setSearchResults] = useState(null);
+  const [searchResults, setSearchResults] = useState([]);
 
   const handleInputChange = event => {
     setBookSearch(event.target.value)
@@ -17,7 +17,7 @@ function Search() {
     event.preventDefault();
     console.log('Hi this is the handleFormSubmit')
     API.getBooks(bookSearch)
-      .then(res => {setSearchResults(res.data)})
+      .then(res => {setSearchResults(res.data.items)})
       .catch(err => console.log(err))
   }
 
@@ -30,14 +30,18 @@ function Search() {
       // save to mongo and then return to new prop to hold results 
     />
     <Container>
-    <Card 
-    {...searchResults.map( results => {
-      // return (
-      //   // key={results.data}
-      // )
+    {searchResults.map( result => {
+      return (
+        <Card 
+        key={result.id}
+        title={result.volumeInfo.title}
+        author={result.volumeInfo.authors}
+        description={result.volumeInfo.description}
+        thumbnail={result.volumeInfo.imageLinks.thumbnail}
+        />
+      )
     })}
 
-    />
     </Container>
     </>
   )

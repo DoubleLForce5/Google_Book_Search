@@ -1,4 +1,5 @@
 import React from 'react';
+import Thumbnail from '../Thumbnail';
 import './style.css';
 
 function Card ({
@@ -9,12 +10,13 @@ function Card ({
 }) {
   return (
     <>
+    <Thumbnail src={thumbnail} />
     <div>
       <h1>{title}</h1>
-      <p>author</p>
+      <p>{author}</p>
     </div>
     <div>
-      <p>description</p>
+      <p>{description}</p>
     </div>
     </>
   )
