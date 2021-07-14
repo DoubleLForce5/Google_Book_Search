@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Container () {
+function Header () {
   return (
     <div className="container-md d-flex align-items-center border border-dark flex-column mt-4 mb-4 pb-5 pt-2" >
       <h1>(React) Google Books Search</h1>
@@ -9,4 +9,4 @@ function Container () {
   )
 }
 
-export default Container; 
+export default Header; 

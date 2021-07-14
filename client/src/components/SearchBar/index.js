@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function SearchBar (props) {
-  console.log(props)
+  // console.log(props)
   return (
     <div className="container-md d-flex align-items-center border border-dark flex-column mt-4 mb-4 pb-5 pt-2">
       <h4>Book Search</h4>
