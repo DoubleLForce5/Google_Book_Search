@@ -8,7 +8,8 @@ function Card ({
   title,
   author,
   description,
-  onSave
+  onSave,
+  link
 }) {
   return (
     <>
@@ -21,10 +22,14 @@ function Card ({
       <p>{description}</p>
     </div>
     <Button onClick={onSave} >
-      save
+      Save
     </Button>
+      <a href={link} target="_blank" rel='noopener noreferrer'>
+      <Button >
+        View
+      </Button>
+      </a>
     </>
-
   )
 }
 

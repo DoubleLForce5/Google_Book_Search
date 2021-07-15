@@ -18,5 +18,19 @@ export default {
       },
       data: book
     });
-  }
+  },
+
+  getSavedBook: function () {
+    return axios('/api/books');
+  },
+
+  // deleteBook: function (book) {
+  //   return axios(`/api/books/${book}`, {
+  //     method: 'DELETE',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     data: book
+  //   });
+  // }
 };

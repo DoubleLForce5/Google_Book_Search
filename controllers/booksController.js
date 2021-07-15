@@ -36,14 +36,3 @@ module.exports = {
           .catch(err => res.status(422).json(err))
       }
 }
-
-// Search (API)
-
-// search an individual book on Google API (id)
-// put/updating as a saved item (DB)
-
-
-// Saved 
-//  find all in mongo DB
-// search an individual book on Google API (id)
-// remove a single book from DB(ID)
