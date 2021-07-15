@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SearchBar from "../components/SearchBar";
 import API from "../utils/API";
 import Card from "../components/Card";

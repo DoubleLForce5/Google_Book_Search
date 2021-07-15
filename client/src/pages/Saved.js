@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import API from "../utils/API";
 import Container from "../components/Container ";
 
-function Save() {
+function Saved() {
   const [books, setBooks] = useState([])
 
   useEffect(() => {
@@ -11,22 +11,19 @@ function Save() {
 
   function loadBooks() {
     API.getSavedBook()
-      .then(res => setBooks(res.data))
+      .then((res) => console.log(res.data))
       .catch(err => console.log(err));
   };
 
   return (
     <Container>
-      {books.map((book, i) => 
-      <div key={i}>
-        {book.title}
-      </div>
-    )}
-
+<div>
+  save
+</div>
     </Container>
 
   )
 
 }
 
-export default Save;
+export default Saved;

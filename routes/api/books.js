@@ -10,7 +10,7 @@ router.get('/books/:search', async (req, res) => {
 
   try {
     const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${req.params.search}&key=${apiKey}`);
-    // parse the object here and send that to front end 
+
     res.json(response.data)
   } catch (error) {
     console.log(error);
@@ -19,5 +19,6 @@ router.get('/books/:search', async (req, res) => {
 
 router.post('/books', booksController.create) 
 
-
+router.get('/books', booksController.findAll)
+  
 module.exports = router; 
