@@ -8,5 +8,15 @@ export default {
         'Content-Type': 'application/json',
       }
     });
+  },
+
+  saveBook: function (book) {
+    return axios('/api/books/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      data: book
+    });
   }
 };

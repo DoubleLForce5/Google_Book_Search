@@ -1,12 +1,14 @@
 import React from 'react';
 import Thumbnail from '../Thumbnail';
+import Button from '../Button'
 import './style.css';
 
 function Card ({
   thumbnail,
   title,
   author,
-  description
+  description,
+  onSave
 }) {
   return (
     <>
@@ -18,7 +20,11 @@ function Card ({
     <div>
       <p>{description}</p>
     </div>
+    <Button onClick={onSave} >
+      save
+    </Button>
     </>
+
   )
 }
 

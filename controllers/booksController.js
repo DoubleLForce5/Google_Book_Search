@@ -1,37 +1,40 @@
-const db = require('../models/books');
+const Books = require('../models/books');
 
 module.exports = {
   findAll: function(req, res)
   {
-    db.Books
+    Books
       .find(req.query)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
     findById: function(req, res) {
-      db.Books
+      Books
         .findById(req.params.id)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },
     update: function( req, res) {
-      db.Books
+      Books
         .findOneAndUpdate({ _id: req.params.id}, req.body)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
     },
     remove: function (req, res) {
-      db.Book
+      Books
         .findById({ _id: req.params.id})
         .then(dbModel => dbModel.remove())
         .then(dbModel => res.json(dbModel))
         .catch(err=> res.status(422).json(err));
 
-    }
-
-  
-  
+    }, 
+      create: function (req, res) {
+        Books
+          .create(req.body)
+          .then(dbModel => res.json(dbModel))
+          .catch(err => res.status(422).json(err))
+      }
 }
 
 // Search (API)

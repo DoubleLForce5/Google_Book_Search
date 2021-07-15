@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const axios = require('axios');
+const booksController = require('../../controllers/booksController');
 require('dotenv').config();
 
 router.get('/books/:search', async (req, res) => {
@@ -15,5 +16,8 @@ router.get('/books/:search', async (req, res) => {
     console.log(error);
   }
 })
+
+router.post('/books', booksController.create) 
+
 
 module.exports = router; 
