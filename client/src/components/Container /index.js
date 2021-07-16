@@ -2,7 +2,7 @@ import React from 'react'
 
 function Container (props) {
   return (
-    <div className="container-md d-flex align-items-center flex-column mt-4 mb-4 pb-5 pt-2">
+    <div className="container-fluid mt-3">
       {props.children}
     </div>
   )

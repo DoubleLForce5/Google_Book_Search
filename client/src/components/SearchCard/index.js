@@ -1,36 +1,29 @@
-import React from 'react';
-import Thumbnail from '../Thumbnail';
-import Button from '../Button'
-import './style.css';
+import React from "react";
+import Thumbnail from "../Thumbnail";
+import Button from "../Button";
+import "./style.css";
 
-function SearchCard ({
-  thumbnail,
-  title,
-  author,
-  description,
-  onSave,
-  link
-}) {
+function SearchCard({ thumbnail, title, author, description, onSave, link }) {
   return (
-    <>
-    <Thumbnail src={thumbnail} />
-    <div>
-      <h1>{title}</h1>
-      <p>{author}</p>
+    <div className="searchCard px-2 my-2">
+      <div className="d-flex flex-row justify-content-between mt-1">
+        <div>
+          <p className="title m-0">{title}</p>
+          <p className="authors">{author}</p>
+        </div>
+        <div className='btnContainer d-flex align-items-start'>
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <Button type='warning' className='me-1'>View</Button>
+          </a>
+          <Button onClick={onSave} type='success'>Save</Button>
+        </div>
+      </div>
+      <div className="d-flex flex-row">
+        <Thumbnail src={thumbnail} />
+        <p className="description">{description}</p>
+      </div>
     </div>
-    <div>
-      <p>{description}</p>
-    </div>
-    <Button onClick={onSave} >
-      Save
-    </Button>
-      <a href={link} target="_blank" rel='noopener noreferrer'>
-      <Button >
-        View
-      </Button>
-      </a>
-    </>
-  )
+  );
 }
 
-export default SearchCard; 
+export default SearchCard;

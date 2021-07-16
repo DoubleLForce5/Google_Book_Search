@@ -1,12 +1,11 @@
 import React from 'react';
+import './style.css';
 
 
 function SearchBar (props) {
-  // console.log(props)
   return (
-    <div className="container-md d-flex align-items-center border border-dark flex-column mt-4 mb-4 pb-5 pt-2">
-      <h4>Book Search</h4>
-      <p>Book:</p>
+    <div className="searchBar d-flex border border-2 border-dark rounded flex-column p-3">
+      <h4 className='text-center'>Book Search:</h4>
       <div className="input-group mb-3">
       <input type="text"
       onChange={props.onChange} 

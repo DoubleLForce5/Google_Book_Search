@@ -12,24 +12,26 @@ function savedCard ({
   link
 }) {
   return (
-    <>
-    <Thumbnail src={thumbnail} />
-    <div>
-      <h1>{title}</h1>
-      <p>{author}</p>
-    </div>
-    <div>
-      <p>{description}</p>
-    </div>
-    <Button onClick={onDelete} >
+<div className="savedCard px-2 my-2">
+      <div className="d-flex flex-row justify-content-between mt-1">
+        <div>
+          <p className="title m-0">{title}</p>
+          <p className="authors">{author}</p>
+        </div>
+        <div className='btnContainer d-flex align-items-start'>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+            <Button  className='me-1' type='warning'>View</Button>
+          </a>
+    <Button onClick={onDelete} type='danger'>
       Remove
     </Button>
-      <a href={link} target="_blank" rel='noopener noreferrer'>
-      <Button >
-      View
-      </Button>
-      </a>
-    </>
+    </div>
+      </div>
+      <div className="d-flex flex-row">
+        <Thumbnail src={thumbnail} />
+        <p className="description">{description}</p>
+      </div>
+    </div>
   )
 }
 
