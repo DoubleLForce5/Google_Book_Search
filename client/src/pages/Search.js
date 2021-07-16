@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SearchBar from "../components/SearchBar";
 import API from "../utils/API";
-import Card from "../components/Card";
+import SearchCard from '../components/SearchCard'
 import Container from "../components/Container ";
 
 function Search() {
@@ -35,7 +35,6 @@ function Search() {
         handleFormSubmit={handleFormSubmit}
         onChange={handleInputChange}
         value={bookSearch}
-        // save to mongo and then return to new prop to hold results
       />
       <Container>
         {searchResults.map(
@@ -50,7 +49,7 @@ function Search() {
             },
           }) => {
             return (
-              <Card
+              <SearchCard
                 key={id}
                 title={title}
                 author={authors}

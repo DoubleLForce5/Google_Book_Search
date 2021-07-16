@@ -3,12 +3,12 @@ import Thumbnail from '../Thumbnail';
 import Button from '../Button'
 import './style.css';
 
-function Card ({
+function savedCard ({
   thumbnail,
   title,
   author,
   description,
-  onSave,
+  onDelete,
   link
 }) {
   return (
@@ -21,16 +21,16 @@ function Card ({
     <div>
       <p>{description}</p>
     </div>
-    <Button onClick={onSave} >
-      Save
+    <Button onClick={onDelete} >
+      Remove
     </Button>
       <a href={link} target="_blank" rel='noopener noreferrer'>
       <Button >
-        View
+      View
       </Button>
       </a>
     </>
   )
 }
 
-export default Card; 
+export default savedCard; 

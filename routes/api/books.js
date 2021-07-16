@@ -20,5 +20,7 @@ router.get('/books/:search', async (req, res) => {
 router.post('/books', booksController.create) 
 
 router.get('/books', booksController.findAll)
+
+router.delete('/books/:id', booksController.remove)
   
 module.exports = router; 
