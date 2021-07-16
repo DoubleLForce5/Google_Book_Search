@@ -6,16 +6,7 @@ import Container from "../components/Container ";
 
 function Search() {
 
-  function alert () {
-    const message = (
-      <div>
-        <h4>Book saved!</h4>
-      </div>
-    ); 
-    ReactDOM.render(message, document.getElementById('root'))
-  }
  
-
   const [bookSearch, setBookSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
@@ -24,7 +15,9 @@ function Search() {
   };
 
   const saveBook = (book) => {
-    API.saveBook(book).then((res) => {
+    API.saveBook(book)
+      .then((res) => {
+      alert('Book saved!')
       console.log(res);
     });
   };
