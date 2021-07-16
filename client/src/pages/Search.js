@@ -5,6 +5,17 @@ import SearchCard from '../components/SearchCard'
 import Container from "../components/Container ";
 
 function Search() {
+
+  function alert () {
+    const message = (
+      <div>
+        <h4>Book saved!</h4>
+      </div>
+    ); 
+    ReactDOM.render(message, document.getElementById('root'))
+  }
+ 
+
   const [bookSearch, setBookSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
