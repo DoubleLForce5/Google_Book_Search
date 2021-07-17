@@ -49,7 +49,7 @@ function Search() {
               authors,
               description,
               infoLink,
-              imageLinks: { thumbnail },
+              imageLinks: { thumbnail } = {}
             },
           }) => {
             return (
