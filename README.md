@@ -11,7 +11,7 @@ https://shielded-refuge-63503.herokuapp.com/
 - Clone this repository and open it within VS Code or any text editor of your choosing.
 - Right-click on the server.js file within your explorer dock and select "open in integrated terminal"
 - In your terminal type 'NPM install' and hit enter. 
-- Please note that for this application you will need to create and add your own personal Google Books API key to a .env file in order to search for books via the API. An example env has been provided for reference. 
+- Please note that for this application you will need to create and add your own personal Google Books API key to a .env file in order to search for   books via the API. An example env has been provided for reference. 
 - Upon completion of the installation mentioned above, type 'npm run start' into the terminal and hit enter to start the server. 
 
 ## Usage instructions
@@ -19,6 +19,11 @@ On page load, the user will be presented with a search bar where they can enter 
 
 If and when the user decides they are no longer interested in a certain book they can choose to delete that book from their page by clicking the remove button. 
 
+<img width="982" alt="Screen Shot 2021-07-16 at 1 16 47 PM" src="https://user-images.githubusercontent.com/73543476/125991909-2eed35d1-e8f1-4f66-8857-1425da19904c.png">
+
+<img width="979" alt="Screen Shot 2021-07-16 at 1 17 04 PM" src="https://user-images.githubusercontent.com/73543476/125991922-2a58eeba-403f-4f67-9e31-9bfbc7357517.png">
+
+<img width="988" alt="Screen Shot 2021-07-16 at 1 17 30 PM" src="https://user-images.githubusercontent.com/73543476/125991935-b5ff1157-cf7e-47af-91e8-28d61c76c4f3.png">
 
 ## Tech 
 - Axios
