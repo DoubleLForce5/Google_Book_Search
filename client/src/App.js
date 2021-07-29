@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <div>
-        <NavBar />
+        {/* <NavBar /> */}
         <Header />
         <Switch>
           <Route exact path={["/", "/books"]}>
