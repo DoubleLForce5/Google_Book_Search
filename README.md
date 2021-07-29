@@ -4,7 +4,7 @@
 This application allows the user to search for and view books using the Google Books API. The app utilizes MongoDB to provide the user with the option to save books to the "saved" page for easy access later. 
  
 ## Deployed site
-https://shielded-refuge-63503.herokuapp.com/
+https://google-books-search-app1.herokuapp.com/
 
 ## Installation
 - To utilize this application you will need Node.js.
