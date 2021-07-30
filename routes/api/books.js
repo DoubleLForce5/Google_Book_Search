@@ -12,8 +12,8 @@ router.get('/books/:search', async (req, res) => {
     const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${req.params.search}&key=${apiKey}`);
 
     res.json(response.data)
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    res.status(500).send(err);
   }
 })
 
