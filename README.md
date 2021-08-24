@@ -26,6 +26,8 @@ If and when the user decides they are no longer interested in a certain book the
 <img width="988" alt="Screen Shot 2021-07-16 at 1 17 30 PM" src="https://user-images.githubusercontent.com/73543476/125991935-b5ff1157-cf7e-47af-91e8-28d61c76c4f3.png">
 
 ## Tech 
+- CSS
+- HMTL
 - Axios
 - React
 - Heroku 
