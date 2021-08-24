@@ -32,7 +32,8 @@ If and when the user decides they are no longer interested in a certain book the
 - React
 - Heroku 
 - Mogoose
-- MongoDB  
+- MongoDB 
+- Node.js 
 - Dotenv
 - Nodemon
 - Bootstrap 
