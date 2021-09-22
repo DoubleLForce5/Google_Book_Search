@@ -27,11 +27,11 @@ If and when the user decides they are no longer interested in a certain book the
 
 ## Tech 
 - CSS
-- HMTL
+- HTML
 - Axios
 - React
 - Heroku 
-- Mogoose
+- Mongoose
 - MongoDB 
 - Node.js 
 - Dotenv
