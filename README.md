@@ -1,4 +1,4 @@
-# Google Books Search
+# Google Book Search
 
 ## Description
 This application allows the user to search for and view books using the Google Books API. The app utilizes MongoDB to provide the user with the option to save books to the "saved" page for easy access later. 
